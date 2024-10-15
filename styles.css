@@ -1,0 +1,84 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
+}
+
+/* Header Section */
+header {
+    background-color: #2f3e46;
+    padding: 10px 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Profile Section */
+.profile {
+    margin-top: 50px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #f0f0f0;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 20px 0;
+}
+
+p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* Social Links */
+.social-links a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 10px;
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.social-links a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Footer Section */
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #2f3e46;
+    color: white;
+}
