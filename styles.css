@@ -20,6 +20,7 @@ header {
     position: fixed;
     width: 100%;
     top: 0;
+    z-index: 100;
 }
 
 header .left a {
@@ -30,6 +31,7 @@ header .left a {
 }
 
 header .right {
+    margin-left: auto;  /* This forces the right navigation items to go to the right */
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -79,12 +81,11 @@ p {
 footer {
     background-color: #2f3e46;
     color: white;
-    padding: 10px 20px;
+    padding: 5px 20px;  /* Reduced height of the footer */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 50%;  /* Reduced footer width */
-    margin: 0 auto;  /* Center footer horizontally */
+    width: 100%;  /* Full width of the webpage */
     position: fixed;
     bottom: 0;
     left: 0;
@@ -94,12 +95,12 @@ footer {
 /* Footer Social Media Icons */
 footer .social-icons {
     display: flex;
-    gap: 15px;  /* Adjusted spacing between icons */
+    gap: 10px;  /* Adjusted spacing between icons */
 }
 
 footer .social-icons a {
     color: white;
-    font-size: 1.2em;  /* Adjusted icon size to make them smaller */
+    font-size: 1em;  /* Reduced size of icons */
     text-decoration: none;
     transition: color 0.3s;
 }
@@ -110,5 +111,5 @@ footer .social-icons a:hover {
 
 /* Social Links Icons */
 .fab {
-    font-size: 1.2em;
+    font-size: 1em;  /* Reduced font size of icons */
 }
