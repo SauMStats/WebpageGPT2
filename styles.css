@@ -13,9 +13,9 @@ body {
 /* Header Section */
 header {
     background-color: #2f3e46;
-    padding: 10px 20px;
+    padding: 10px 0;
     display: flex;
-    justify-content: center;  /* Align the menu items to the center */
+    justify-content: center;  /* Center the menu */
     align-items: center;
     position: fixed;
     width: 100%;
@@ -23,26 +23,32 @@ header {
     z-index: 100;
 }
 
-header .right {
-    display: flex;
-    gap: 20px;  /* Added gap between the links */
+.header-container {
+    width: 100%;
+    max-width: 1200px; /* Maximum width for header */
 }
 
-header .right a {
-    color: white;
-    text-decoration: none;
+.right {
+    display: flex;
+    gap: 20px;  /* Space between items */
+    padding: 0 20px; /* Add some padding on the sides */
+}
+
+.right a {
+    color: white; /* Set link color to white */
     font-weight: bold;
     font-size: 1.1em;
+    text-decoration: none; /* Remove underline from links */
 }
 
-header .right a:hover {
-    text-decoration: underline;
+.right a:hover {
+    text-decoration: underline; /* Underline on hover for better visibility */
 }
 
 /* Profile Section */
 main {
     flex-grow: 1;
-    margin-top: 100px;
+    margin-top: 60px;  /* Space for fixed header */
 }
 
 .profile {
@@ -71,43 +77,37 @@ p {
 footer {
     background-color: #2f3e46;
     color: white;
-    padding: 10px 20px;
+    padding: 10px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 100%;  /* Full width of the webpage */
     position: fixed;
     bottom: 0;
-    left: 0;
-    right: 0;
 }
 
 /* Footer Social Media Icons */
 footer .social-icons {
     display: flex;
-    gap: 20px;  /* Adjusted spacing between icons */
-    justify-content: center;  /* Centering the icons */
-    margin-bottom: 10px;  /* Added spacing between icons and copyright */
+    gap: 15px;  /* Space between icons */
+    justify-content: center;  /* Center the icons */
+    margin-bottom: 10px;  /* Space between icons and copyright */
 }
 
 footer .social-icons a {
     color: white;
-    font-size: 1.2em;  /* Adjust the size as needed */
+    font-size: 1.5em;  /* Size of the icons */
     text-decoration: none;
     transition: color 0.3s;
 }
 
 footer .social-icons a:hover {
-    color: #f9a825;
-}
-
-/* Social Links Icons */
-.fab {
-    font-size: 1.2em;  /* Adjusted font size of icons */
+    color: #f9a825;  /* Change color on hover */
 }
 
 /* Copyright text */
 footer p {
     margin: 0;
-    font-size: 0.9em;  /* Adjust the font size for the copyright text */
+    font-size: 0.9em;  /* Size for copyright text */
 }
