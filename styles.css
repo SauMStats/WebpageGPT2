@@ -23,29 +23,30 @@ header {
     z-index: 100;
 }
 
+/* Left navigation with the name */
 header .left a {
     color: white;
     text-decoration: none;
-    font-size: 1.2em;  /* Reduced font size for SAURABH MISHRA */
+    font-size: 1.2em;
     font-weight: bold;
 }
 
-header .right {
-    margin-left: auto;  /* This forces the right navigation items to go to the right */
+/* Center navigation for links */
+header .center {
+    flex-grow: 1;  /* Ensure it takes up the center space */
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 20px;  /* Added gap between the links */
+    justify-content: center;
+    gap: 30px;  /* Add space between links */
 }
 
-header .right a {
+header .center a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.1em;  /* Adjusted size for better spacing */
+    font-size: 1.1em;
 }
 
-header .right a:hover {
+header .center a:hover {
     text-decoration: underline;
 }
 
@@ -81,35 +82,36 @@ p {
 footer {
     background-color: #2f3e46;
     color: white;
-    padding: 5px 20px;  /* Reduced height of the footer */
+    padding: 5px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;  /* Full width of the webpage */
+    width: 100%;
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
 }
 
-/* Footer Social Media Icons */
+/* Social Media Icons in Footer */
 footer .social-icons {
     display: flex;
-    gap: 10px;  /* Adjusted spacing between icons */
+    gap: 10px;
 }
 
 footer .social-icons a {
     color: white;
-    font-size: 1em;  /* Reduced size of icons */
+    font-size: 1.1em;  /* Adjusted size of icons */
     text-decoration: none;
     transition: color 0.3s;
+    padding-right: 5px;
 }
 
 footer .social-icons a:hover {
     color: #f9a825;
 }
 
-/* Social Links Icons */
+/* Reduced icon size */
 .fab {
-    font-size: 1em;  /* Reduced font size of icons */
+    font-size: 1.2em;
 }
