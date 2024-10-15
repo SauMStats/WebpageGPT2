@@ -25,15 +25,22 @@ header {
 header .left a {
     color: white;
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1.2em;  /* Reduced font size for SAURABH MISHRA */
     font-weight: bold;
+}
+
+header .right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;  /* Added gap between the links */
 }
 
 header .right a {
     color: white;
     text-decoration: none;
-    margin-left: 20px;
     font-weight: bold;
+    font-size: 1.1em;  /* Adjusted size for better spacing */
 }
 
 header .right a:hover {
@@ -76,16 +83,23 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 50%;  /* Reduced footer width */
+    margin: 0 auto;  /* Center footer horizontally */
     position: fixed;
-    width: 100%;
     bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 /* Footer Social Media Icons */
+footer .social-icons {
+    display: flex;
+    gap: 15px;  /* Adjusted spacing between icons */
+}
+
 footer .social-icons a {
     color: white;
-    margin-left: 20px;
-    font-size: 1.5em;
+    font-size: 1.2em;  /* Adjusted icon size to make them smaller */
     text-decoration: none;
     transition: color 0.3s;
 }
@@ -96,5 +110,5 @@ footer .social-icons a:hover {
 
 /* Social Links Icons */
 .fab {
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
