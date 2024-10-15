@@ -15,7 +15,7 @@ header {
     background-color: #2f3e46;
     padding: 10px 20px;
     display: flex;
-    justify-content: flex-end;  /* Align the menu items to the right */
+    justify-content: center;  /* Align the menu items to the center */
     align-items: center;
     position: fixed;
     width: 100%;
