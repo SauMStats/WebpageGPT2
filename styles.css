@@ -5,39 +5,50 @@ body {
     padding: 0;
     background-color: #f9f9f9;
     color: #333;
-    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Header Section */
 header {
     background-color: #2f3e46;
-    padding: 10px 0;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
-header nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-header nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-header nav ul li a {
+header .left a {
     color: white;
     text-decoration: none;
+    font-size: 1.5em;
     font-weight: bold;
 }
 
-header nav ul li a:hover {
+header .right a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+header .right a:hover {
     text-decoration: underline;
 }
 
 /* Profile Section */
+main {
+    flex-grow: 1;
+    margin-top: 100px;
+}
+
 .profile {
     margin-top: 50px;
+    text-align: center;
 }
 
 .profile-img {
@@ -57,28 +68,33 @@ p {
     color: #666;
 }
 
-/* Social Links */
-.social-links a {
-    text-decoration: none;
-    color: #333;
-    margin: 0 10px;
-    font-weight: bold;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    display: inline-block;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.social-links a:hover {
-    background-color: #333;
-    color: #fff;
-}
-
 /* Footer Section */
 footer {
-    margin-top: 50px;
-    padding: 20px;
     background-color: #2f3e46;
     color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Footer Social Media Icons */
+footer .social-icons a {
+    color: white;
+    margin-left: 20px;
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer .social-icons a:hover {
+    color: #f9a825;
+}
+
+/* Social Links Icons */
+.fab {
+    font-size: 1.5em;
 }
